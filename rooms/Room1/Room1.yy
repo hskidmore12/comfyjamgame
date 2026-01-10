@@ -13,8 +13,8 @@
   ],
   "name":"Room1",
   "parent":{
-    "name":"cozyjamgame",
-    "path":"cozyjamgame.yyp",
+    "name":"Rooms",
+    "path":"folders/Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
