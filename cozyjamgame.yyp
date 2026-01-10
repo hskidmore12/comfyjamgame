@@ -22,19 +22,14 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.2.213",
+    "IDEVersion":"2024.14.2.212",
   },
   "name":"cozyjamgame",
   "resources":[
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
-<<<<<<< HEAD
     {"id":{"name":"spr_penis","path":"sprites/spr_penis/spr_penis.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
-=======
-    {"id":{"name":"Sprite1","path":"sprites/Sprite1/Sprite1.yy",},},
-    {"id":{"name":"Sprite2","path":"sprites/Sprite2/Sprite2.yy",},},
->>>>>>> Rudger
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
