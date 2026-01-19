@@ -1,12 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_delivery",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_teleport",
+  "eventList":[],
   "managed":true,
-  "name":"obj_delivery",
+  "name":"obj_teleport",
   "overriddenProperties":[],
   "parent":{
     "name":"Real",
@@ -31,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_delivery",
-    "path":"sprites/spr_delivery/spr_delivery.yy",
+    "name":"spr_teleport",
+    "path":"sprites/spr_teleport/spr_teleport.yy",
   },
   "spriteMaskId":null,
   "visible":true,

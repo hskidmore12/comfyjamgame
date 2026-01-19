@@ -1,16 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_delivery",
+  "%Name":"obj_box_destroyer",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_delivery",
+  "name":"obj_box_destroyer",
   "overriddenProperties":[],
   "parent":{
-    "name":"Real",
-    "path":"folders/Objects/Real.yy",
+    "name":"Meta",
+    "path":"folders/Objects/Meta.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_delivery",
-    "path":"sprites/spr_delivery/spr_delivery.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

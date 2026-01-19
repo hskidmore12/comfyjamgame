@@ -1,3 +1,3 @@
 instance_create = undefined;
-timer = 10;
+timer = 1/60;
 alarm[0] = 60 * timer;

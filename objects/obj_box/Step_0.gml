@@ -1,5 +1,9 @@
 //pickup key
 pickup = keyboard_check_pressed(vk_space);
+
+if(!complete){
+	
+}
 //pickup box drop if held
 if(pickup){
 	if(!complete){
