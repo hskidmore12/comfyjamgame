@@ -1,7 +1,7 @@
 held = false;
 box_num = floor(random_range(1, 5));
 complete = false;
-
+delivery = false;
 switch(box_num){
 	case 4:
 		image_index = 3;

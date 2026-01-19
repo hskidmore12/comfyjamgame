@@ -1,12 +1,13 @@
 //pickup key
 pickup = keyboard_check_pressed(vk_space);
-
-if(!complete){
-	
+if(complete){
+	alarm[0] = 120;
+	complete = false;
+	delivery = true;
 }
 //pickup box drop if held
 if(pickup){
-	if(!complete){
+	if(!complete and !delivery){
 		if(held == false and distance_to_object(obj_player) < 10){
 			held = true;
 		}

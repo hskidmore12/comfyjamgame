@@ -1,16 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_teleport",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_pauser",
+  "eventList":[],
   "managed":true,
-  "name":"obj_teleport",
+  "name":"obj_pauser",
   "overriddenProperties":[],
   "parent":{
-    "name":"Real",
-    "path":"folders/Objects/Real.yy",
+    "name":"Meta",
+    "path":"folders/Objects/Meta.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_teleport",
-    "path":"sprites/spr_teleport/spr_teleport.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

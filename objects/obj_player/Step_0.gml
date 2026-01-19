@@ -14,6 +14,12 @@ else{
 	xspd = (right - left) * mspd;
 	yspd = (down - up) * mspd;
 }
+if instance_exists(obj_pauser)
+{
+		xspd = 0;
+		yspd = 0;
+}
+
 //Collisions
 if(place_meeting(x + xspd, y, obj_wall)){
 	while(!place_meeting(x + sign(xspd), y, obj_wall)){
