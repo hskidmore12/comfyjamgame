@@ -1,10 +1,22 @@
 //pickup key
-pickup = keyboard_check_pressed(vk_space);
+pickup = keyboard_check_pressed(vk_space);\
+//Once box is completed
 if(complete){
 	alarm[0] = 120;
 	complete = false;
 	delivery = true;
+	if(!expired){	
+		image_index = 5;
+		obj_level.completions += 100;
+	}
 }
+if(!instance_exists(obj_pauser)){
+	time = alarm[1];
+}
+else{
+	alarm[1] = -1;
+}
+alarm[1] = time;
 //pickup box drop if held
 if(pickup){
 	if(!complete and !delivery){
