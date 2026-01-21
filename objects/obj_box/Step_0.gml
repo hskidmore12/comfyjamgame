@@ -1,5 +1,5 @@
 //pickup key
-pickup = keyboard_check_pressed(vk_space);\
+pickup = keyboard_check_pressed(vk_space);
 //Once box is completed
 if(complete){
 	alarm[0] = 120;
@@ -7,7 +7,9 @@ if(complete){
 	delivery = true;
 	if(!expired){	
 		image_index = 5;
-		obj_level.completions += 100;
+		obj_level.completions++;
+		obj_level.complete_count++;
+		obj_level.level_score += 100;
 	}
 }
 if(!instance_exists(obj_pauser)){
@@ -19,7 +21,7 @@ else{
 alarm[1] = time;
 //pickup box drop if held
 if(pickup){
-	if(!complete and !delivery){
+	if((!complete and !delivery)){
 		if(held == false and distance_to_object(obj_player) < 10){
 			held = true;
 		}

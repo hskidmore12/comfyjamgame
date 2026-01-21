@@ -3,7 +3,7 @@ box_num = floor(random_range(1, 5));
 complete = false;
 delivery = false;
 expired = false;
-alarm[1] = 300;
+alarm[1] = 1;
 switch(box_num){
 	case 4:
 		image_index = 3;

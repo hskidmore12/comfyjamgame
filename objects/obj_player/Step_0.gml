@@ -1,4 +1,3 @@
-
 //Keyboard Checks
 down = keyboard_check(ord("S"));
 up = keyboard_check(ord("W"));
