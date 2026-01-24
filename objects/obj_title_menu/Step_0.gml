@@ -19,7 +19,7 @@ if(select){
 	
 		//Start game
 		case 0 :
-			room_goto(rm_level1);
+			instance_create_depth(camera_get_view_x(view_camera[0]), camera_get_view_y(view_camera[0]), -100000, obj_black_screen, {target_rm: rm_skip, setter: noone});
 			break;
 	
 		//end
