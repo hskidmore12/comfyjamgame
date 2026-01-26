@@ -1,6 +1,6 @@
 var timer_left = alarm[0] / 60;
-draw_text(camera_get_view_x(view_camera[0]), camera_get_view_y(view_camera[0]) + 60, "Score: " + string(level_score));
-draw_text(camera_get_view_x(view_camera[0]), camera_get_view_y(view_camera[0]) + 100, "Level Timer: " + string(timer_left));
+//draw_text(camera_get_view_x(view_camera[0]), camera_get_view_y(view_camera[0]) + 60, "Score: " + string(level_score));
+//draw_text(camera_get_view_x(view_camera[0]), camera_get_view_y(view_camera[0]) + 100, "Level Timer: " + string(timer_left));
 switch (global.stars){
 	case 5:
 		draw_sprite(spr_stars, 4, camera_get_view_x(view_camera[0]) + 640,  camera_get_view_y(view_camera[0]));

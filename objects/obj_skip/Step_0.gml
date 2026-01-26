@@ -6,7 +6,7 @@ select = keyboard_check_pressed(vk_space);
 //move through menu
 pos += down - up;
 
-if (pos >= op_length) {
+if (pos >= op_length-1) {
 	pos = 1
 }
 if (pos < 1) {

@@ -24,6 +24,15 @@ switch(level){
 			global.stars++;
 			complete_count = 0;
 		}
+	case 2:
+		if(expiration_count == 2){
+			global.stars--;
+			expiration_count = 0;
+		}
+		if(complete_count == 3){
+			global.stars++;
+			complete_count = 0;
+		}
 }
 if(global.stars == 0){
 	room_goto(rm_game_over);	

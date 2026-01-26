@@ -5,7 +5,7 @@ instance_create_layer(32, 614, "Dialogue", obj_textbox, {
         "Ya see those stars?\n That's the lodge's rating\n It can go up or down depending on if ya do ya job right.",
         "That clock let's ya see when ya days almost over.",
 		"Since ya getting no customers at the moment.\n There is only one thing to do.",
-		"Deliver Boxes\n The boxes will come in over here,\nand they'll have a number telling ya where to go.",
+		"Deliver Boxes\n The boxes will come in at that desk,\nand they'll have a number telling ya where to go.",
 		"1, down below",
 		"2 and 3 are to the left",
 		"and 4 is up.",

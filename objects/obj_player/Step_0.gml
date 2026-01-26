@@ -5,6 +5,7 @@ left = keyboard_check(ord("A"));
 right = keyboard_check(ord("D"));
 run = keyboard_check(vk_shift);
 //movement calculations
+depth = -50;
 if(run){
 	hspd = (right - left) * rspd;
 	vspd = (down - up) * rspd;
@@ -54,6 +55,10 @@ if yspd < 0 && face = DOWN {face = UP};
 
 sprite_index = sprite[face];
 
+if xspd == 0 && yspd == 0
+	{
+		image_index = 0;
+	}
 
 //Actually Move
 x += xspd;

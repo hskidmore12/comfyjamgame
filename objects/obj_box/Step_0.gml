@@ -1,3 +1,5 @@
+depth = -75;
+
 //pickup key
 pickup = keyboard_check_pressed(vk_space);
 //Once box is completed
@@ -9,7 +11,7 @@ if(complete){
 		image_index = 5;
 		obj_level.completions++;
 		obj_level.complete_count++;
-		obj_level.level_score += 100;
+		obj_level.level_score += score_inc;
 	}
 }
 if(!instance_exists(obj_pauser)){

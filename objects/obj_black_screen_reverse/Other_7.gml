@@ -1,4 +1,4 @@
 if(dialogue != noone){
-	instance_create_layer(0, 0, "Instances", dialogue);
+	instance_create_layer(0, 0, "game", dialogue);
 }
 instance_destroy();
