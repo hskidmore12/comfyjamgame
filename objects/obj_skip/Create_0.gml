@@ -8,7 +8,7 @@ op_space = 32;
 pos = 0;
 option[0] = "Skip Intro?"
 option[1] = "Yes"
-option[2] = "No"
+//option[2] = "No"
 
 
 op_length = array_length(option);

@@ -1,6 +1,9 @@
 timer = irandom_range(8, 12);
 alarm[0] = timer * 60;
 i = irandom_range(48, 164);
+while(place_meeting(511, i, obj_box)){
+	i = irandom_range(48, 164);
+}
 if(instance_number(obj_box) < 5){
 	switch(obj_level.level){
 		case 1:
