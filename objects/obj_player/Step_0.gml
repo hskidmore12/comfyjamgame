@@ -3,17 +3,11 @@ down = keyboard_check(ord("S"));
 up = keyboard_check(ord("W"));
 left = keyboard_check(ord("A"));
 right = keyboard_check(ord("D"));
-run = keyboard_check(vk_shift);
+pickup = keyboard_check_pressed(vk_space);
 //movement calculations
 depth = -50;
-if(run){
-	hspd = (right - left) * rspd;
-	vspd = (down - up) * rspd;
-}
-else{	
-	xspd = (right - left) * mspd;
-	yspd = (down - up) * mspd;
-}
+xspd = (right - left) * mspd;
+yspd = (down - up) * mspd;
 if instance_exists(obj_pauser)
 {
 		xspd = 0;
@@ -33,7 +27,22 @@ if(place_meeting(x, y + yspd, obj_wall)){
 	}
 	yspd = 0;
 }
-
+//pickup box
+if(instance_exists(obj_box)){	
+	if(pickup){
+		var box =  instance_nearest(x, y, obj_box);
+		if((!box.complete and !box.delivery)){
+			if(box.held == false and distance_to_object(box) < 10 and !holding_item){
+				box.held = true;
+				holding_item = true;
+			}
+			else if(box.held){
+				box.held = false;
+				holding_item = false;
+			}
+		}
+	}
+}
 //set sprite
 
 mask_index = sprite[DOWN]

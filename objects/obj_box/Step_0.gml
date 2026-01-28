@@ -7,6 +7,9 @@ if(complete){
 	alarm[0] = 120;
 	complete = false;
 	delivery = true;
+	if(held){
+		obj_player.holding_item = false;
+	}
 	if(!expired){	
 		image_index = 5;
 		obj_level.completions++;
@@ -22,17 +25,7 @@ else{
 }
 alarm[1] = time;
 //pickup box drop if held
-if(pickup){
-	if((!complete and !delivery)){
-		if(held == false and distance_to_object(obj_player) < 10){
-			held = true;
-		}
-		else if(held){
-			held = false;
-			obj_player.item_held = noone;
-		}
-	}
-}
+
 //move box if held
 if(held){
 	if(obj_player.face == UP){

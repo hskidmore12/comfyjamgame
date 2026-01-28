@@ -1,10 +1,10 @@
-if((alarm[0] / 60) == 135){
+if((alarm[0] / 60) == 90){
 	obj_clock.sprite_time = 1;
 }
-if((alarm[0] / 60) == 90){
+if((alarm[0] / 60) == 60){
 	obj_clock.sprite_time = 2;
 }
-if((alarm[0] / 60) == 45){
+if((alarm[0] / 60) == 30){
 	obj_clock.sprite_time = 3;
 }
 if(!instance_exists(obj_pauser)){
@@ -21,7 +21,9 @@ switch(level){
 			expiration_count = 0;
 		}
 		if(complete_count == 3){
-			global.stars++;
+			if(global.stars <= 5){
+				global.stars++;
+			}
 			complete_count = 0;
 		}
 	case 2:
@@ -30,7 +32,9 @@ switch(level){
 			expiration_count = 0;
 		}
 		if(complete_count == 3){
-			global.stars++;
+			if(global.stars <= 5){
+				global.stars++;
+			}
 			complete_count = 0;
 		}
 }

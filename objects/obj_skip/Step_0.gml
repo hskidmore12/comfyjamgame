@@ -21,13 +21,13 @@ if(select){
 	
 		//Start game
 		case 1 :
-			instance_create_depth(camera_get_view_x(view_camera[0]), camera_get_view_y(view_camera[0]), -100000, obj_black_screen, {target_rm: rm_level1, setter: obj_dialogue1});
+			instance_create_depth(camera_get_view_x(view_camera[0]), camera_get_view_y(view_camera[0]), -100000, obj_black_screen, {target_rm: rm_level1, setter: obj_level});
 			select = noone;
 			break;
 	
 		//end
 		case 2:
-			instance_create_depth(camera_get_view_x(view_camera[0]), camera_get_view_y(view_camera[0]), -100000, obj_black_screen, {target_rm: rm_intro, setter: noone});
+			instance_create_depth(camera_get_view_x(view_camera[0]), camera_get_view_y(view_camera[0]), -100000, obj_black_screen, {target_rm: rm_level1, setter: obj_dialogue1});
 			select = noone;
 			break;
 	
