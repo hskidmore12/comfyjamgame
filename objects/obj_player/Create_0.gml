@@ -1,10 +1,9 @@
 
 //initial variables
 mspd = 2;
-rspd = 4;
 xspd = 0;
 yspd = 0;
-item_held = noone;
+holding_item = false;
 //sprites
 sprite[DOWN] = spr_player_down;
 sprite[UP] = spr_player_up;
